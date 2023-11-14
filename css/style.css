@@ -79,7 +79,7 @@ main > section {
 /* 
     TABLET
 */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     .my-col-100 {
         width: calc((100% / 3) - 20px);
     }
@@ -107,6 +107,14 @@ main > section {
     #third-section .seventy-percent {
         width: 70%;
     }
+
+    #fourth-section .my-row .with-title {
+        width: 100%;
+    }
+
+    #fourth-section .my-col-100 {
+        width: calc(50% - 20px);
+    }
 }
 
 /* 
@@ -126,7 +134,11 @@ main > section {
         text-align: center;
     }
 
-    #third-section .my-col-100 {
-        
+    #fourth-section .my-row .with-title {
+        width: 100%;
+    }
+
+    #fourth-section .my-col-100 {
+        width: calc((100% / 3) - 20px);
     }
 }
