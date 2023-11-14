@@ -12,16 +12,38 @@
 */
 :root {
     --header-main-color: #0084FD;
+    --my-col-main-section-1-color: #B5DDFF;
     --main-footer-top-main-color: #9792E4;
-    --my-col-header-bottom-color: #B5DDFF;
 }
 
 /* 
     GENERAL
 */
+.bg-main {
+    background-color: var(--header-main-color);
+}
+
+.bg-main-light {
+    background-color: var(--my-col-main-section-1-color);
+}
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.my-col-100 {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* 
@@ -30,6 +52,7 @@
 .main-nav-container {
     display: flex;
     justify-content: space-between;
+    padding: 20px 0;
 }
 
 .main-nav-container nav {
@@ -37,12 +60,58 @@
 }
 
 /* 
-    RESPONSIVE
+    MAIN
 */
-@media screen and (min-width: 768px) {
- 
+main > section {
+    padding: 40px 0;
 }
 
+/* 
+    THIRD SECTION
+*/
+#third-section .my-col-100 {
+    margin-bottom: 24px;
+}
+
+/* 
+    MEDIA QUERY
+*/
+/* 
+    TABLET
+*/
+@media screen and (min-width: 768px) {
+    .my-col-100 {
+        width: calc((100% / 3) - 20px);
+    }
+
+    .my-col-big {
+        width: calc(((100% / 3) * 2) - 20px);
+    }
+
+    #second-section .my-col-100 {
+        width: calc(100% - 20px);
+    }
+
+    #third-section .my-col-100 {
+        width: calc(100% - 20px);
+    }
+
+    #third-section .with-img {
+        display: flex;
+    }
+
+    #third-section .thirty-percent {
+        width: 30%;
+    }
+
+    #third-section .seventy-percent {
+        width: 70%;
+    }
+}
+
+/* 
+    DESKTOP
+*/
 @media screen and (min-width: 992px) {
     .main-nav-container nav {
         display: block;
@@ -50,5 +119,14 @@
 
     .main-nav-container .hamburger-container {
         display: none;
+    }
+
+    #second-section .my-col-100 {
+        width: calc(50% - 20px);
+        text-align: center;
+    }
+
+    #third-section .my-col-100 {
+        
     }
 }
