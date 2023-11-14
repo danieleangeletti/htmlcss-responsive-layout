@@ -1,0 +1,54 @@
+/* 
+    RESET
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    ROOT
+*/
+:root {
+    --header-main-color: #0084FD;
+    --main-footer-top-main-color: #9792E4;
+    --my-col-header-bottom-color: #B5DDFF;
+}
+
+/* 
+    GENERAL
+*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 
+    HEADER
+*/
+.main-nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav-container nav {
+    display: none;
+}
+
+/* 
+    RESPONSIVE
+*/
+@media screen and (min-width: 768px) {
+ 
+}
+
+@media screen and (min-width: 992px) {
+    .main-nav-container nav {
+        display: block;
+    }
+
+    .main-nav-container .hamburger-container {
+        display: none;
+    }
+}
