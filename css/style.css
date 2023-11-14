@@ -129,9 +129,12 @@ main > section {
         display: none;
     }
 
+    #second-section .my-row {
+        justify-content: center;
+    }
+
     #second-section .my-col-100 {
-        width: calc(50% - 20px);
-        text-align: center;
+        width: calc(30% - 20px);
     }
 
     #fourth-section .my-row .with-title {
