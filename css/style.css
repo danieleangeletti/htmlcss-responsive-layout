@@ -131,6 +131,18 @@ main > section {
     #sixth-section * {
         text-align: center;
     }
+
+    footer .my-row {
+        justify-content: center;
+    }
+
+    footer .my-col-100 {
+        width: calc(55% - 20px);
+    }
+
+    footer * {
+        text-align: center;
+    }
 }
 
 /* 
@@ -174,6 +186,18 @@ main > section {
     }
 
     #sixth-section * {
+        text-align: center;
+    }
+
+    footer .my-row {
+        justify-content: center;
+    }
+
+    footer .my-col-100 {
+        width: calc(55% - 20px);
+    }
+
+    footer * {
         text-align: center;
     }
 }
