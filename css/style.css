@@ -115,6 +115,10 @@ main > section {
     #fourth-section .my-col-100 {
         width: calc(50% - 20px);
     }
+
+    #fifth-section .my-col-100 {
+        width: calc(50% - 20px);
+    }
 }
 
 /* 
@@ -143,5 +147,9 @@ main > section {
 
     #fourth-section .my-col-100 {
         width: calc((100% / 3) - 20px);
+    }
+
+    #fifth-section .my-col-100 {
+        width: calc(50% - 20px);
     }
 }
