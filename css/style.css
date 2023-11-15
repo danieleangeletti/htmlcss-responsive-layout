@@ -201,6 +201,7 @@ main > section {
 }
 
 #second-section .my-col-100:last-child {
+    padding: 10px;
     border-radius: 16px;
 }
 
@@ -217,16 +218,14 @@ main > section {
     text-align: center;
 }
 
-#second-section .my-col-100 i {
-    margin-top: 12px;
-    margin-bottom: 32px;
-}
-
 #second-section .my-col-100 a {
     color: black;
     padding: 12px;
     background-color: var(--second-section-bg-color);
     border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
 }
 
 /* 
@@ -252,6 +251,7 @@ main > section {
 }
 
 #third-section .my-col-100:nth-child(4), #third-section .my-col-100:nth-child(5), #third-section .my-col-100:nth-child(6) {
+    padding: 16px;
     border-radius: 16px;
 }
 
@@ -384,6 +384,7 @@ main > section {
 
     #second-section .my-row {
         justify-content: center;
+        align-items: flex-end;
     }
 
     #second-section .my-col-100 {
