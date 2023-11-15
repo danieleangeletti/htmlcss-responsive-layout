@@ -48,6 +48,10 @@ html {
     background-color: white;
 }
 
+.font-violet {
+    color: var(--second-section-bg-color);
+}
+
 .icons-first-section {
     font-size: var(--icons-first-section);
 }
@@ -230,8 +234,36 @@ main > section {
 */
 #third-section .my-col-100 {
     margin-bottom: 24px;
-    /* text-align: center; */
+    align-items: center;
 }
+
+#third-section .thirty-percent {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#third-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#third-section .my-col-100:nth-child(4), #third-section .my-col-100:nth-child(5), #third-section .my-col-100:nth-child(6) {
+    border-radius: 16px;
+}
+
+#third-section .my-col-100:nth-child(4) p, #third-section .my-col-100:nth-child(5) p, #third-section .my-col-100:nth-child(6) p {
+    padding: 12px;
+    color: white;
+}
+
+/* 
+    FOURTH SECTION
+*/
+
 
 /* 
     MEDIA QUERY
@@ -277,7 +309,8 @@ main > section {
     }
 
     #third-section .thirty-percent {
-        width: 30%;
+        width: 200px;
+        height: 200px;
     }
 
     #third-section .seventy-percent {
@@ -375,7 +408,8 @@ main > section {
     }
 
     #third-section .thirty-percent {
-        width: 30%;
+        width: 200px;
+        height: 200px;
     }
 
     #third-section .seventy-percent {
