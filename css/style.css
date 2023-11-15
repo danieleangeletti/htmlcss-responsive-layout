@@ -230,6 +230,7 @@ main > section {
 */
 #third-section .my-col-100 {
     margin-bottom: 24px;
+    /* text-align: center; */
 }
 
 /* 
@@ -363,6 +364,22 @@ main > section {
     #second-section .my-col-100:first-child h2 {
         margin-top: 80px;
         margin-bottom: 40px;
+    }
+
+    #third-section .my-col-100 {
+        width: calc(100% - 20px);
+    }
+
+    #third-section .with-img {
+        display: flex;
+    }
+
+    #third-section .thirty-percent {
+        width: 30%;
+    }
+
+    #third-section .seventy-percent {
+        width: 70%;
     }
 
     #fourth-section .my-row .with-title {
