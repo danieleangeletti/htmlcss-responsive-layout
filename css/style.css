@@ -119,6 +119,18 @@ main > section {
     #fifth-section .my-col-100 {
         width: calc(50% - 20px);
     }
+
+    #sixth-section .my-row {
+        justify-content: center;
+    }
+
+    #sixth-section .my-col-100 {
+        width: calc(55% - 20px);
+    }
+
+    #sixth-section * {
+        text-align: center;
+    }
 }
 
 /* 
@@ -151,5 +163,17 @@ main > section {
 
     #fifth-section .my-col-100 {
         width: calc(50% - 20px);
+    }
+
+    #sixth-section .my-row {
+        justify-content: center;
+    }
+
+    #sixth-section .my-col-100 {
+        width: calc(55% - 20px);
+    }
+
+    #sixth-section * {
+        text-align: center;
     }
 }
