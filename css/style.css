@@ -22,7 +22,7 @@ html {
     --my-col-main-section-1-color: #B5DDFF;
     --main-footer-top-main-color: #9792E4;
     --icons-first-section: 88px;
-    /* --my-col-border-radius: 16px; */
+    --second-section-bg-color: #9792E4;
 }
 
 /* 
@@ -40,13 +40,17 @@ html {
     background-color: var(--my-col-main-section-1-color);
 }
 
+.second-section-color {
+    background-color: var(--second-section-bg-color);
+}
+
+.bg-white {
+    background-color: white;
+}
+
 .icons-first-section {
     font-size: var(--icons-first-section);
 }
-
-/* .my-col-border-radius {
-    border-radius: var(--my-col-border-radius);
-} */
 
 .container {
     max-width: 1000px;
@@ -182,6 +186,46 @@ main > section {
 }
 
 /* 
+    SECOND SECTION
+*/
+#second-section .my-col-100:first-child {
+    margin-bottom: 32px;
+}
+
+#second-section img {
+    width: 100%;
+}
+
+#second-section .my-col-100:last-child {
+    border-radius: 16px;
+}
+
+#second-section h2, #second-section h3 {
+    margin: 24px 0;
+}
+
+#second-section .my-col-100:last-child h3, #second-section .my-col-100:last-child p {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+#second-section .my-col-100:last-child div {
+    text-align: center;
+}
+
+#second-section .my-col-100 i {
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+#second-section .my-col-100 a {
+    color: black;
+    padding: 12px;
+    background-color: var(--second-section-bg-color);
+    border-radius: 50%;
+}
+
+/* 
     THIRD SECTION
 */
 #third-section .my-col-100 {
@@ -310,6 +354,15 @@ main > section {
 
     #second-section .my-col-100 {
         width: calc(30% - 20px);
+    }
+
+    #second-section .my-col-100:first-child {
+        margin-right: 32px;
+    }
+
+    #second-section .my-col-100:first-child h2 {
+        margin-top: 80px;
+        margin-bottom: 40px;
     }
 
     #fourth-section .my-row .with-title {
