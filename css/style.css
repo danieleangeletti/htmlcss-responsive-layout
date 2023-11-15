@@ -8,6 +8,13 @@
 }
 
 /* 
+    HTML
+*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
     ROOT
 */
 :root {
@@ -49,14 +56,45 @@
 /* 
     HEADER
 */
+header {
+    color: white;
+}
+
 .main-nav-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0;
 }
 
 .main-nav-container nav {
     display: none;
+}
+
+.main-nav-container nav ul {
+    list-style: none;
+}
+
+.main-nav-container nav ul li {
+    display: inline-block;
+    padding-left: 12px;
+}
+
+.main-nav-container nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav-container nav ul li:last-child a {
+    color: black;
+    padding: 6px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.hamburger-container i {
+    font-size: 2.8em;
 }
 
 /* 
