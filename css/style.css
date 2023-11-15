@@ -21,6 +21,8 @@ html {
     --header-main-color: #0084FD;
     --my-col-main-section-1-color: #B5DDFF;
     --main-footer-top-main-color: #9792E4;
+    --icons-first-section: 88px;
+    /* --my-col-border-radius: 16px; */
 }
 
 /* 
@@ -30,9 +32,21 @@ html {
     background-color: var(--header-main-color);
 }
 
+.color-main {
+    color: var(--header-main-color);
+}
+
 .bg-main-light {
     background-color: var(--my-col-main-section-1-color);
 }
+
+.icons-first-section {
+    font-size: var(--icons-first-section);
+}
+
+/* .my-col-border-radius {
+    border-radius: var(--my-col-border-radius);
+} */
 
 .container {
     max-width: 1000px;
@@ -111,6 +125,12 @@ main > section {
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+#first-section .my-col-100:not(:first-child) > div {
+    width: 100%;
 }
 
 #first-section .first-container, #first-section .second-container {
@@ -122,22 +142,43 @@ main > section {
     text-align: center;
 }
 
-#first-section h2 {
+.first-container h2 {
     color: var(--header-main-color);
-    margin: 24px 0;
+    margin: 32px 0;
 }
 
-#first-section p {
+.first-container p {
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+
+.first-container i {
+    margin-bottom: 32px;
+}
+
+.first-container a {
+    text-decoration: none;
+    background-color: var(--header-main-color);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 16px;
+}
+
+.second-container img {
+    max-width: 85%;
+}
+
+#first-section .my-col-100:not(:first-child) p {
     line-height: 28px;
     margin-bottom: 24px;
 }
 
-#first-section i {
-    margin-bottom: 24px;
+#first-section .my-col-100:not(:first-child) i {
+    margin: 24px 0;
 }
 
-#first-section img {
-    width: 100%;
+#first-section .my-col-100:not(:first-child) h2 {
+    margin-bottom: 24px;
 }
 
 /* 
@@ -162,8 +203,16 @@ main > section {
         width: calc(((100% / 3) * 2) - 20px);
     }
 
+    #first-section .my-col-100 {
+        align-items: flex-end;
+    }
+
     #first-section div {
         text-align: left;
+    }
+
+    #first-section .my-col-100:not(:first-child) div {
+        text-align: center;
     }
 
     #first-section .second-container {
@@ -245,6 +294,10 @@ main > section {
 
     .my-col-big {
         width: calc(((100% / 3) * 2) - 20px);
+    }
+
+    #first-section .my-col-100 {
+        align-items: flex-end;
     }
 
     #first-section .first-container, #first-section .second-container {
