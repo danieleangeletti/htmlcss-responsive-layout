@@ -263,7 +263,42 @@ main > section {
 /* 
     FOURTH SECTION
 */
+#fourth-section .my-col-100:first-child h2 {
+    color: white;
+    margin-bottom: 24px;
+}
 
+#fourth-section .my-col-100:not(:first-child) {
+    background-color: white;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+#fourth-section .my-col-100:not(:first-child) p:first-of-type {
+    font-size: 3em;
+    color: var(--second-section-bg-color);
+}
+
+#fourth-section .my-col-100:not(:first-child) h2 {
+    color: var(--second-section-bg-color);
+}
+
+#fourth-section .my-col-100:not(:first-child) * {
+    padding: 16px;
+}
+
+#fourth-section .my-col-100:not(:first-child) div {
+    padding-top: 32px;
+    padding-bottom: 48px;
+}
+
+#fourth-section .my-col-100:not(:first-child) div a {
+    text-decoration: none;
+    padding: 16px 36px;
+    color: white;
+    background-color: var(--second-section-bg-color);
+    border-radius: 50px;
+}
 
 /* 
     MEDIA QUERY
