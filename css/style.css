@@ -23,6 +23,7 @@ html {
     --main-footer-top-main-color: #9792E4;
     --icons-first-section: 88px;
     --second-section-bg-color: #9792E4;
+    --footer-bg-color: #333333;
 }
 
 /* 
@@ -54,6 +55,10 @@ html {
 
 .icons-first-section {
     font-size: var(--icons-first-section);
+}
+
+.bg-footer {
+    background-color: var(--footer-bg-color);
 }
 
 .container {
@@ -352,6 +357,10 @@ main > section {
     background-color: white;
 }
 
+/* 
+    SIXTH SECTION
+*/
+
 #sixth-section {
     text-align: center;
     color: white;
@@ -393,6 +402,22 @@ main > section {
     vertical-align: middle;
 }
 
+/* 
+    FOOTER
+*/
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+footer .my-col-100:first-child {
+    margin-bottom: 40px;
+}
+
+footer a {
+    color: var(--second-section-bg-color);
+}
 
 /* 
     MEDIA QUERY
@@ -479,7 +504,7 @@ main > section {
     }
 
     footer .my-col-100 {
-        width: calc(55% - 20px);
+        width: calc(70% - 20px);
     }
 
     footer * {
